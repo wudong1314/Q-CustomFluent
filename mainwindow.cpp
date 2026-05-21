@@ -4,6 +4,7 @@
 #include "HomeInterface.h"
 #include "IconInterface.h"
 #include "Router.h"
+#include "Fluent/BasicInputInterface.h"
 
 using FIT = Fluent::IconType;
 using NIP = NavigationPanel::ItemPosition;
@@ -46,23 +47,23 @@ void MainWindow::initWidget()
     userCard->setSubtitleFontSize(10);
 
     QString iconPath = QString(":/res/icons/%1_{color}.svg");
-    addSubInterface("1", Fluent::icon(FIT::HOME), "Ö÷Ò³", new HomeInterface(this), true, NIP::TOP, "Ö÷Ò³");
-    addSubInterface("2", Fluent::icon(FIT::EMOJI_TAB_SYMBOLS), "Í¼±ê", new IconInterface(this), true, NIP::TOP, "Í¼±ê");
+    addSubInterface("1", Fluent::icon(FIT::HOME), "ï¿½ï¿½Ò³", new HomeInterface(this), true, NIP::TOP, "ï¿½ï¿½Ò³");
+    addSubInterface("2", Fluent::icon(FIT::EMOJI_TAB_SYMBOLS), "Í¼ï¿½ï¿½", new IconInterface(this), true, NIP::TOP, "Í¼ï¿½ï¿½");
     _navPanel->addSeparator();
-    addSubInterface("3", Fluent::icon(FIT::CHECKBOX), "»ù±¾ÊäÈë", new BasicInputInterface(this), true, NIP::SCROLL, "»ù±¾ÊäÈë");
-   /* addSubInterface("4", Fluent::icon(FIT::DATE_TIME), "ÈÕÆÚºÍÊ±¼ä", new DateTimeInputInterface(this), true, NIP::SCROLL, "ÈÕÆÚºÍÊ±¼ä");
-    addSubInterface("5", Fluent::icon(FIT::MESSAGE), "¶Ô»°¿ò", new DialogInputInterface(this), true, NIP::SCROLL, "¶Ô»°¿ò");
-    addSubInterface("6", Fluent::icon(FIT::LAYOUT), "²¼¾Ö", new LayoutInterface(this), true, NIP::SCROLL, "²¼¾Ö");
-    addSubInterface("7", Fluent::icon(iconPath.arg("Menu")), "²Ëµ¥", new MenuInterface(this), true, NIP::SCROLL, "²Ëµ¥");
-    addSubInterface("8", Fluent::icon(FIT::MENU), "µ¼º½", new NavigationViewInterface(this), true, NIP::SCROLL, "µ¼º½");
-    addSubInterface("9", Fluent::icon(FIT::APPLICATION), "´°¿Ú", new WindowInterface(this), true, NIP::SCROLL, "´°¿Ú");
-    addSubInterface("10", Fluent::icon(FIT::PALETTE), "²ÄÁÏ", new MaterialInterface(this), true, NIP::SCROLL, "²ÄÁÏ");
+    addSubInterface("3", Fluent::icon(FIT::CHECKBOX), "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", new BasicInputInterface(this), true, NIP::SCROLL, "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+   /* addSubInterface("4", Fluent::icon(FIT::DATE_TIME), "ï¿½ï¿½ï¿½Úºï¿½Ê±ï¿½ï¿½", new DateTimeInputInterface(this), true, NIP::SCROLL, "ï¿½ï¿½ï¿½Úºï¿½Ê±ï¿½ï¿½");
+    addSubInterface("5", Fluent::icon(FIT::MESSAGE), "ï¿½Ô»ï¿½ï¿½ï¿½", new DialogInputInterface(this), true, NIP::SCROLL, "ï¿½Ô»ï¿½ï¿½ï¿½");
+    addSubInterface("6", Fluent::icon(FIT::LAYOUT), "ï¿½ï¿½ï¿½ï¿½", new LayoutInterface(this), true, NIP::SCROLL, "ï¿½ï¿½ï¿½ï¿½");
+    addSubInterface("7", Fluent::icon(iconPath.arg("Menu")), "ï¿½Ëµï¿½", new MenuInterface(this), true, NIP::SCROLL, "ï¿½Ëµï¿½");
+    addSubInterface("8", Fluent::icon(FIT::MENU), "ï¿½ï¿½ï¿½ï¿½", new NavigationViewInterface(this), true, NIP::SCROLL, "ï¿½ï¿½ï¿½ï¿½");
+    addSubInterface("9", Fluent::icon(FIT::APPLICATION), "ï¿½ï¿½ï¿½ï¿½", new WindowInterface(this), true, NIP::SCROLL, "ï¿½ï¿½ï¿½ï¿½");
+    addSubInterface("10", Fluent::icon(FIT::PALETTE), "ï¿½ï¿½ï¿½ï¿½", new MaterialInterface(this), true, NIP::SCROLL, "ï¿½ï¿½ï¿½ï¿½");
     addSubInterface("11", Fluent::icon(FIT::CHAT), "×´Ì¬", new StatusInfoInterface(this), true, NIP::SCROLL, "×´Ì¬");
-    addSubInterface("12", Fluent::icon(iconPath.arg("Text")), "ÎÄ±¾", new TextInterface(this), true, NIP::SCROLL, "ÎÄ±¾");
-    addSubInterface("13", Fluent::icon(iconPath.arg("Grid")), "ÊÓÍ¼", new ViewInterface(this), true, NIP::SCROLL, "ÊÓÍ¼");*/
+    addSubInterface("12", Fluent::icon(iconPath.arg("Text")), "ï¿½Ä±ï¿½", new TextInterface(this), true, NIP::SCROLL, "ï¿½Ä±ï¿½");
+    addSubInterface("13", Fluent::icon(iconPath.arg("Grid")), "ï¿½ï¿½Í¼", new ViewInterface(this), true, NIP::SCROLL, "ï¿½ï¿½Í¼");*/
 
     _navPanel->addSeparator(NIP::BOTTOM);
-   // addSubInterface("14", Fluent::icon(FIT::SETTING), "ÉèÖÃ", new SettingInterface(this), true, NIP::BOTTOM, "ÉèÖÃ");
+   // addSubInterface("14", Fluent::icon(FIT::SETTING), "ï¿½ï¿½ï¿½ï¿½", new SettingInterface(this), true, NIP::BOTTOM, "ï¿½ï¿½ï¿½ï¿½");
 
     Router::instance()->setDefaultRouteKey(_stacked, "homeInterface");
 
