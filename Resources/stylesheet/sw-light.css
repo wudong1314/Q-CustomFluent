@@ -1,1 +1,889 @@
+﻿/*********************************************************************************
+**                                                                              **
+**  Copyright (C) 2019-2022 LiLong                                              **
+**  This file is part of QCustomUi.                                             **
+**                                                                              **
+**  QCustomUi is free software: you can redistribute it and/or modify           **
+**  it under the terms of the GNU Lesser General Public License as published by **
+**  the Free Software Foundation, either version 3 of the License, or           **
+**  (at your option) any later version.                                         **
+**                                                                              **
+**  QCustomUi is distributed in the hope that it will be useful,                **
+**  but WITHOUT ANY WARRANTY; without even the implied warranty of              **
+**  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the               **
+**  GNU Lesser General Public License for more details.                         **
+**                                                                              **
+**  You should have received a copy of the GNU Lesser General Public License    **
+**  along with QCustomUi.  If not, see <https://www.gnu.org/licenses/>.         **
+**********************************************************************************/
 
+*
+{
+    font-family: 'Microsoft YaHei';
+    outline: none;
+}
+
+/***************************QCtmTitleBar************************************/
+
+.QCusFluentTitleBar #closeBtn
+{
+    qproperty-icon: url(:/QCustomUi/Resources/close-light.png);
+}
+
+.QCusFluentTitleBar #minimumSizeBtn
+{
+    qproperty-icon: url(:/QCustomUi/Resources/minimize-light.png);
+}
+
+.QCusFluentTitleBar #maximumSizeBtn[maximumsized=true]
+{
+    qproperty-icon: url(:/QCustomUi/Resources/maximize-light.png);
+}
+
+.QCusFluentTitleBar #maximumSizeBtn[maximumsized=false]
+{
+    qproperty-icon: url(:/QCustomUi/Resources/maximize_max-light.png);
+}
+
+QCusFluentTitleBar QAbstractButton
+{
+    padding-left: 5px;
+    padding-right: 5px;
+    border: none;
+    background-color: transparent;
+}
+
+QCusFluentTitleBar QAbstractButton:hover
+{
+    background-color: #C6C6C6;
+    border: none;
+}
+
+QCusFluentTitleBar QAbstractButton:pressed
+{
+    background-color: #C0C0C0;
+    border: none;
+}
+
+.QCusFluentTitleBar
+{
+    background: #D9D9D9;
+    font-weight: 400;
+    color: rgba(94,94,94,1);
+}
+
+.QCusFluentTitleBar QMenuBar
+{
+    background: #D9D9D9;
+}
+
+.QCusFluentTitleBar QMenuBar::item
+{
+    font-family: 'Microsoft YaHei';
+    font-weight: 400;
+    color: rgba(94,94,94,1);
+    background-color: #D9D9D9;
+}
+
+.QCusFluentTitleBar QMenuBar::item:hover
+{
+    background-color: #C6C6C6;
+}
+
+.QCusFluentTitleBar QMenuBar::item:pressed
+{
+    background-color: #C6C6C6;
+}
+
+/*********************************************************************/
+
+/****************************QStatusBar*******************************/
+
+.QStatusBar
+{
+    max-height: 20px;
+    min-height: 20px;
+    color: white;
+    background: #68217A;
+}
+
+QStatusBar QToolButton
+{
+    color: white;
+    border: none;
+}
+
+QStatusBar QToolButton:hover
+{
+    background-color: #1F8AD2;
+}
+
+QStatusBar::item
+{
+    border: none;
+}
+/********************************************************************/
+
+/********************QCtmNavigationBar**********************/
+QCtmNavigationBar::separator
+{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: 1px;
+    background: #CCCCCC;
+}
+
+.QCusFluentNavigationBar
+{
+    max-height: 50px;
+    min-height: 50px;
+    font-family: 'Microsoft YaHei';
+    font-weight: 400;
+    color: #4F4F4F;
+    background: #F3F3F3;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.QCusFluentNavigationBar .QCusFluentToolButton, QCusFluentUserButton
+{
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: 'Microsoft YaHei';
+    font-weight: 400;
+    color: rgba(79,79,79,1);
+    border: 0px;
+    background-color: transparent;
+}
+
+.QCusFluentNavigationBar .QCusFluentToolButton:hover, QCusFluentUserButton:hover
+{
+    background-color: #cbe5ff;
+}
+
+.QCusFluentNavigationBar .QCusFluentToolButton:pressed, QCusFluentUserButton:pressed
+{
+    background-color: #cbe5ff;
+}
+
+.QCusFluentNavigationBar .QCusFluentToolButton:checked, QCusFluentUserButton:checked
+{
+    background-color: #C0C1C3;
+}
+
+.QCusFluentNavigationBar #help
+{
+    qproperty-icon: url(:/QCustomUi/Resources/help-light.png);
+}
+
+/****************************************************************/
+
+/**************************QCusFluentNavigationImageButton****************************/
+QCusFluentNavigationImageButton
+{
+    background-color: transparent;
+    border: none;
+}
+
+QCusFluentNavigationImageButton:hover
+{
+    background-color: #F0F0F0;
+}
+
+QCusFluentNavigationImageButton:pressed
+{
+    background-color: white;
+}
+
+QCusFluentNavigationImageButton:checked
+{
+    background-color: white;
+}
+
+/************************************************************************/
+
+/***********************QCusFluentNavigationSideBar**************************/
+.QCusFluentNavigationSideBar
+{
+    background: #2C2C2C;
+}
+
+QCusFluentNavigationSideBar QToolButton
+{
+    border: none;
+    background-color: transparent;
+}
+/************************************************************/
+
+/*************************QCusFluentTabWidget**********************/
+
+.QCusFluentTabWidget #closeButton
+{
+    width: 20px;
+    height: 20px;
+    border: none;
+}
+
+.QCusFluentTabWidget #closeButton
+{
+    image: url(:/QCustomUi/Resources/hideButton-light.png);
+}
+
+.QCusFluentTabWidget #closeButton:hover
+{
+    background: #CBE5FF;
+}
+
+.QCusFluentTabWidget #closeButton:pressed
+{
+    image: url(:/QCustomUi/Resources/hideButton.png);
+    background: #2477CE;
+}
+
+QCusFluentTabWidget
+{
+    border: none;
+    border-top: 1px solid #D3D3D3;
+    background: white;
+}
+
+QCusFluentTabWidget::pane
+{
+    background: white;
+    border: none;
+}
+
+QCusFluentTabWidget QTabBar
+{
+    margin-left: 10px;
+    margin-top: 0px;
+    font-family: 'Microsoft YaHei';
+    background: white;
+    border: none;
+    border-top: 1px solid #D3D3D3;
+}
+
+QCusFluentTabWidget QTabBar::tab
+{
+    margin-top: 1px;
+    min-height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: white;
+    border: none;
+    font-family: 'Microsoft YaHei';
+}
+
+QCusFluentTabWidget QTabBar::tab:selected
+{
+    color: #1F1F1F;
+    border-bottom: 1px solid #C3C3C3;
+}
+
+QCusFluentTabWidget QTabBar::tab:!selected
+{
+    color: #4F4F4F;
+}
+
+/************************************************************/
+
+/******************QCusFluentDrawerWidget*************************/
+
+.QCusFluentDrawerItemWidget #title
+{
+    min-height: 30px;
+    max-height: 30px;
+    background: #E1E0E0;
+    font-family: 'Microsoft YaHei';
+    font-weight: bold;
+    color: #4F4F4F;
+    border: none;
+}
+
+.QCusFluentDrawerItemWidget #title::hover
+{
+    border: 1px solid #8ebded;
+}
+
+.QCusFluentDrawerItemWidget #title::pressed
+{
+    border: 1px solid #2477ce;
+}
+
+.QCusFluentDrawerItemWidget #title::branch:close
+{
+    image: url(:/QCustomUi/Resources/tree-close-light.png);
+}
+
+.QCusFluentDrawerItemWidget #title::branch:open
+{
+    image: url(:/QCustomUi/Resources/tree-open-light.png);
+}
+
+.QCusFluentDrawerItemWidget #title QToolButton
+{
+    margin: 1px;
+    border: none;
+}
+
+.QCusFluentDrawerItemWidget #title QToolButton:hover
+{
+    background: #E5F3FF;
+}
+
+.QCusFluentDrawerItemWidget #title QToolButton:pressed, .QCusFluentDrawerItemWidget #title QToolButton:checked
+{
+    background: #CDE8FF;
+}
+
+.QCusFluentDrawerItemWidget #Container
+{
+    background: #F3F3F3;
+}
+
+.QCusFluentDrawerItemWidget
+{
+    background: #F3F3F3;
+}
+
+/************************************************************/
+
+
+/************************************************************/
+
+QCusFluentNavigationSidePane
+{
+    background-color: white;
+}
+
+QCusFluentNavigationSidePane #qcustomui_closeBtn
+{
+    background: transparent;
+    image: url(:/QCustomUi/Resources/close-light.png);
+    border: none;
+}
+
+QCusFluentNavigationSidePane #closeBtn:hover
+{
+    background: transparent;
+}
+
+QCusFluentNavigationSidePane #closeBtn:pressed
+{
+    background: transparent;
+}
+
+QCusFluentNavigationSidePane #qcustomui_title
+{
+    padding-left: 10px;
+    font-family: 'Microsoft YaHei';
+    font-weight: 400;
+    color: #515151;
+}
+
+QCusFluentNavigationSidePane #qcustomui_titleBar
+{
+    min-height: 28px;
+}
+
+QCusFluentNavigationSidePane #qcustomui_clearAll
+{
+    background: transparent;
+    color: #0083CE;
+    text-decoration: underline;
+}
+
+QCusFluentNavigationSidePane #qcustomui_clearAllBase
+{
+    background: white;
+}
+/************************************************************/
+
+/*********************QCusFluentToolBox************************/
+.QCusFluentToolBox
+{
+    background: #eeeef2;
+    border: 1px solid #CCCEDB;
+}
+
+.QCusFluentToolBox #toolBoxSplitter::handle:vertical
+{
+    height: 1px;
+    background: #d0d0d0;
+}
+
+QCusFluentToolBoxItemTitle
+{
+    outline: none;
+    min-height: 24px;
+    max-height: 24px;
+    background: #E0E1E2;
+    color: #4F4F4F;
+    padding-left: 20px;
+}
+
+QCusFluentToolBoxItemTitle[qcustomui_active="true"]
+{
+    background: #007ACC;
+    color: white;
+}
+
+QCusFluentToolBoxItemTitle QCusFluentToolButton
+{
+    border: none;
+    min-width: 16px;
+    max-width: 16px;
+    padding: 5px;
+}
+
+QCusFluentToolBoxItemTitle QCusFluentToolButton:hover
+{
+    background: #d9d9d9;
+}
+
+QCusFluentToolBoxItemTitle QCusFluentToolButton[qcustomui_active="true"]:hover
+{
+    background: #52B0EF;
+}
+
+/************************************************************/
+
+/*********************QCusFluentMessageTipButton**************************/
+
+QCusFluentMessageTipButton
+{
+    border: none;
+    background: transparent;
+}
+
+QCusFluentMessageTipButton:hover
+{
+    background-color: #cbe5ff;
+}
+
+QCusFluentMessageTipButton:pressed
+{
+    background-color: #cbe5ff;
+}
+
+/************************************************************/
+
+/*********************QCusFluentMessageView**************************/
+
+.QCusFluentMessagetTipView #title
+{
+    font-family: 'Microsoft YaHei';
+    font-weight: 400;
+    color: white;
+}
+
+.QCusFluentMessagetTipView #titleBar
+{
+    background: rgba(0,122,204,255);
+}
+
+.QCusFluentMessagetTipView #closeBtn
+{
+    qproperty-icon: url(:/QCustomUi/Resources/close.png);
+    border: none;
+}
+
+.QCusFluentMessagetTipView #qcustomui-tipview
+{
+    background: #F5F5F5;
+    selection-background-color: red;
+    border: none;
+}
+/************************************************************/
+
+/*************************QCusFluentLogWidget*********************/
+.QCusFluentLogWidget
+{
+    qproperty-infoIcon: url(:/QCustomUi/Resources/info.png);
+    qproperty-warningIcon: url(:/QCustomUi/Resources/warning.png);
+    qproperty-errorIcon: url(:/QCustomUi/Resources/Error.png);
+}
+
+.QCusFluentTabWidget QAbstractButton
+{
+    background: transparent;
+}
+
+.QCusFluentTabWidget QAbstractButton::hover
+{
+    background: #CBE5FF;
+    border: 1px solid #2477CE;
+}
+
+.QCusFluentTabWidget QAbstractButton::pressed
+{
+    background: #2477CE;
+    border: 1px solid #2477CE;
+}
+
+.QCusFluentTabWidget QAbstractButton::checked
+{
+    background: white;
+    border: 1px solid #2477CE;
+}
+
+.QCusFluentTabWidget #clearAction
+{
+    image: url(:/QCustomUi/Resources/clear-light.png);
+}
+
+.QCusFluentTabWidget #clearAction:hover
+{
+    border: none;
+}
+
+.QCusFluentTabWidget #clearAction:pressed
+{
+    image: url(:/QCustomUi/Resources/clear.png);
+}
+
+.QCusFluentTabWidget #copyAction
+{
+    image: url(:/QCustomUi/Resources/copy-light.png);
+}
+
+.QCusFluentTabWidget #copyAction:hover
+{
+    border: none;
+}
+
+.QCusFluentTabWidget #copyAction:pressed
+{
+    image: url(:/QCustomUi/Resources/copy.png);
+}
+
+.QCusFluentTabWidget #searchEdit
+{
+    min-height: 20px;
+    max-height: 20px;
+    min-width: 185px;
+    max-width: 185px;
+    background: white;
+    color: #717171;
+    border: 1px solid #D8D9E2;
+}
+
+.QCusFluentTabWidget #searchEdit:hover, .QCusFluentTabWidget #searchEdit:focus
+{
+    border: 1px solid #2477CE;
+}
+
+.QCusFluentTabWidget #searchEdit::drop-down
+{
+    border: none;
+    background: transparent;
+}
+
+.QCusFluentTabWidget #searchEdit::drop-down:hover
+{
+    background: #CBE5FF;
+    border-left: 1px solid #2477CE;
+}
+
+.QCusFluentTabWidget #searchEdit::drop-down:pressed
+{
+    background: #2477CE;
+}
+
+.QCusFluentTabWidget #searchEdit::down-arrow
+{
+    image: url(:/QCustomUi/Resources/drop-down-light.png);
+}
+
+.QCusFluentTabWidget #searchEdit::down-arrow:pressed
+{
+    image: url(:/QCustomUi/Resources/drop-down.png);
+}
+
+.QCusFluentComboBox #searchAction
+{
+    border: none;
+    image: url(:/QCustomUi/Resources/search-light.png);
+}
+
+.QCusFluentComboBox #searchAction:hover
+{
+    background: #CBE5FF;
+}
+
+.QCusFluentComboBox #searchAction:pressed
+{
+    image: url(:/QCustomUi/Resources/search.png);
+    background: #2477CE;
+}
+
+/************************************************************/
+
+/***********************QCusFluentMessageBox***********************/
+
+
+QCusFluentMessageBox
+{
+    background: #F0F0F0;
+}
+
+QCusFluentMessageBox QPushButton
+{
+    min-width: 89px;
+    min-height: 27px;
+    border: 1px solid #B3B3B3;
+    background: #E1E1E1;
+}
+
+QCusFluentMessageBox QPushButton:focus
+{
+    border: 2px solid #0078d7;
+}
+
+QCusFluentMessageBox QPushButton:hover
+{
+    border: 1px solid #0078d7;
+    background: #E5F1FB;
+}
+
+QCusFluentMessageBox QPushButton:pressed
+{
+    border: 1px solid #005499;
+    background: #CCE4F7;
+}
+
+/************************************************************/
+
+/**********************QCusFluentComboBox*************************/
+QCusFluentComboBox
+{
+    background: #FFFFFF;
+    border: 1px solid #999999;
+    color: #808080;
+}
+
+QCusFluentComboBox:hover
+{
+    border: 1px solid #2477CE;
+}
+
+QCusFluentComboBox:disabled
+{
+    background: #D2D2D2;
+    border: 1px solid #E1E1E1;
+    color: #AAAAAA;
+}
+
+QCusFluentComboBox::drop-down
+{
+    background: transparent;
+    border: none;
+}
+
+QCusFluentComboBox::drop-down:hover
+{
+    background: #CBE5FF;
+    border-left: 1px solid #2477CE;
+}
+
+QCusFluentComboBox::drop-down:pressed
+{
+    background: #2477CE;
+}
+
+QCusFluentComboBox::down-arrow
+{
+    image: url(:/QCustomUi/Resources/drop-down-light.png);
+}
+
+QCusFluentComboBox::down-arrow:pressed
+{
+    image: url(:/QCustomUi/Resources/drop-down.png);
+}
+
+QCusFluentComboBox::down-arrow:disabled
+{
+    image: url(:/QCustomUi/Resources/drop-down.png);
+}
+
+QCusFluentComboBox QListView
+{
+    background: #F6F6F6;
+}
+
+QCusFluentComboBox QListView::item
+{
+    padding-left: 5px;
+    height: 21px;
+    color: #808080;
+    background: transparent;
+}
+
+QCusFluentComboBox QListView::item:hover
+{
+    background: #CBE5FF;
+    color: #808080;
+}
+
+QCusFluentComboBox QListView::item:selected
+{
+    background: #CBE5FF;
+    color: #808080;
+}
+
+/*************************QCusFluentTableView************************************/
+QCusFluentTableView
+{
+    qproperty-alternatingRowColors: true;
+    background: white;
+    alternate-background-color: #F7F7F7;
+    border: none;
+}
+
+QCusFluentTableView::item:hover
+{
+    background: #CBE5FF;
+}
+
+QCusFluentTableView::item:selected
+{
+    background: #55aaff;
+    color: white;
+}
+
+QCusFluentTableView #hHeader
+{
+    background: transparent;
+    border: none;
+    font-weight: bold;
+    color: #1E1E1E;
+}
+
+QCusFluentTableView #hHeader::section
+{
+    background: transparent;
+    height: 27px;
+    border: none;
+}
+
+QCusFluentTableView #vHeader
+{
+    background: white;
+    border: none;
+}
+
+QCusFluentTableView #vHeader::section
+{
+    background: white;
+    border: none;
+}
+
+QCusFluentTableView QTableCornerButton::section
+{
+    background: transparent;
+    border: none;
+}
+
+QCusFluentIPAddressEdit
+{
+    background: #FFFFFF;
+    border: 1px solid #999999;
+}
+
+QCusFluentIPAddressEdit:hover
+{
+    border: 1px solid #2477CE;
+}
+
+QCusFluentIPAddressEdit:focus
+{
+    border: 1px solid #2477CE;
+}
+
+QCusFluentIPAddressEdit:disabled
+{
+    color: #AAAAAA;
+    border: 1px solid #E1E1E1;
+    background: #D2D2D2;
+}
+
+QCusFluentNavigationMainMenu QCusFluentMainMenuButton
+{
+    color: rgba(255,255,255,153);
+    padding: 9px;
+    text-align: left bottom;
+    font-weight: bold;
+}
+
+QCusFluentEditLabel QToolButton
+{
+    background: #E1E1E1;
+    border: none;
+}
+
+QCusFluentEditLabel QToolButton:hover
+{
+    background: #E1F0FF;
+}
+
+QCusFluentEditLabel QToolButton:pressed
+{
+    background: #CBE5FF;
+}
+
+QCusFluentDockTitle
+{
+    color: #808080;
+    background: #EEEEF2;
+}
+
+QCusFluentDockTitle::focus
+{
+    color: #FEFEFE;
+    background: #007ACC;
+}
+
+QCusFluentDockTitle QAbstractButton
+{
+    border: none;
+}
+
+QCusFluentDockTitle QAbstractButton
+{
+    background: transparent;
+}
+
+QCusFluentDockTitle QAbstractButton:hover
+{
+    background: rgba(255,255,255,100);
+}
+
+QCusFluentDockTitle QAbstractButton:pressed, QCusFluentDockTitle QAbstractButton:checked
+{
+    margin: 0;
+    background: #0e6198;
+}
+
+QCusFluentDockTitle QToolButton#QCusFluentdocking_close_btn
+{
+    image: url(:/QCustomUi/Resources/close-light.png);
+}
+
+QCusFluentDockTitle QToolButton#QCusFluentdocking_float_btn[float=false]
+{
+    image: url(:/QCusFluentDocking/Resources/QCusFluentDocking/dockTitleFixed.svg);
+}
+
+QCusFluentDockTitle QToolButton#QCusFluentdocking_float_btn[float=true]
+{
+    image: url(:/QCusFluentDocking/Resources/QCusFluentDocking/dockTitleFloat.svg);
+}
+
+QCusFluentStageProgressBar
+{
+    background: #E6E6E6;
+}
+
+QCusFluentClassifyTreeView::item:hover
+{
+    background: #CBE5FF;
+}

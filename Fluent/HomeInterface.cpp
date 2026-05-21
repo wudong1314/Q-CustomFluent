@@ -4,7 +4,7 @@
 #include "FluentIcon.h"
 #include "Theme.h"
 #include "StyleSheet.h"
-#include "mainwindow.h"
+#include "MainWindow.h"
 
 #include "ScrollBar.h"
 

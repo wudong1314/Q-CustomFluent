@@ -5,7 +5,7 @@
 class QCusFluentMaximumSizeButton : public QPushButton
 {
     Q_OBJECT
-        Q_PROPERTY(bool maximumsized READ maximumSized WRITE setMaximumSized)
+      //Q_PROPERTY(bool maximumsized READ maximumSized WRITE setMaximumSized)
 public:
     QCusFluentMaximumSizeButton(QWidget* parent);
     ~QCusFluentMaximumSizeButton();

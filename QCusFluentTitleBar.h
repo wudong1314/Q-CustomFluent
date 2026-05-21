@@ -7,8 +7,7 @@
 
 namespace Ui
 {
-    class QCusFluenTitleBar;
-    using QCusFluentTitleBar = QCusFluenTitleBar;
+    class QCusFluentTitleBar;
 }
 
 class QMenuBar;

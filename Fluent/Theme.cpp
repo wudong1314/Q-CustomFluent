@@ -8,7 +8,7 @@
 #include <QPair>
 #include <QThread>
 
-#include "ThemePrivate.h"
+#include "themePrivate.h"
 
 Q_GLOBAL_STATIC(Theme, qtheme)
 
